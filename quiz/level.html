@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+body {
+    background-color: #eeeeee;
+     background:url(a7.jpg);
+}
+.levels {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px ;
+    background: rgba(40,62,80,0.7);
+     font-color:white;
+}
+.levels h1{
+    font-family: "Palatino Linotype";
+    background-color: #57636e;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+#button1,#button2,#button3 {
+    font-family: "Palatino Linotype";    
+    background-color: #778897;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    align:"center";
+}
+</style>
+</script>
+<script language="javascript" type="text/javascript">
+function level(add)
+{
+ var w=window.open(add,"My Addmin","toolbar=0,left=1000,top=100,location=0,menubar=0,height=2000,width=3000,resizable=0,status=0")
+}
+</script>
+</head>
+<body>
+<form name="fid" action="#" method="post">
+<div class="levels" align="center">
+<h1>Levels of Aptitude </h1>
+<hr style="margin-bottom: 20px">
+<div><input type="Button" id="button1" name="level1" value="Level 1" onclick="level('index3.html')"/></div>
+<div><input type="Button" id="button2" name="level2" value="Level 2" onclick="level('index1.html')"/></div>
+<div><input type="Button" id="button3" name="level3" value="Level 3" onclick="level('index2.html')"/></div>
+</div>
+</form>
+</body>
+</html>

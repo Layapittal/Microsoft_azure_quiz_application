@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+body{
+    background-color: #eeeeee;
+     background:url(a7.jpg);
+}
+.login  {
+ width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    background: rgba(40,62,80,0.7);
+font-size:30px;
+color:white;	
+}
+.login h1 {
+    font-family: "Palatino Linotype";
+    background-color: #57636e;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+
+#btn1,#btn2 {
+    font-family: "Palatino Linotype";    
+    background-color: #778897;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    align:"center";
+}
+
+</style>
+<script language="javascript" type="text/javascript">
+function change_window(add)
+{
+ var w=window.open(add,"My Addmin","toolbar=0,left=1000,top=100,location=0,menubar=0,height=2000,width=3000,resizable=0,status=0")
+}
+function login()
+{
+var reg1=/laya/;
+var reg2=/laya2002/;
+var u1=document.getElementById("text1").value;
+var u2=document.getElementById("text2").value;
+var user1=reg1.test(u1);
+var user2=reg2.test(u2);
+
+
+
+if(user1 && user2)
+{
+window.open("level.html","hello","toolbar=0,left=1000,top=100,location=0,menubar=0,height=2000,width=3000,resizable=0,status=0")
+}
+else
+{
+alert("Please Enter Valid Data");
+}
+}
+</script>
+</head>
+<body>
+<form name="fid" action="#" method="post">
+<div class="login" align="center">
+<h1 id="pid">Login</h1>
+<hr style="margin-bottom: 30px">
+<div>
+username: <input type="text" id="text1" name="username" placeholder="username">
+</div><br><br>
+<div>
+password: <input type="password" id="text2" name="password" placeholder="password">
+<br>
+<div>
+<input type="Button" id="btn1" name="btn1" value="login" onclick="login()"/>
+</div>
+</div>
+</form>
+</body>
+</html>
